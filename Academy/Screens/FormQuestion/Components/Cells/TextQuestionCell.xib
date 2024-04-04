@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextQuestionCell" rowHeight="166" id="qg4-X9-MVX" customClass="TextQuestionCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qg4-X9-MVX" id="qyY-qZ-YUc">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш вопрос" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMj-8D-rin">
+                        <rect key="frame" x="20" y="12" width="374" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BrQ-WX-OtG">
+                        <rect key="frame" x="20" y="41" width="374" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="Puz-IY-1Op"/>
+                        </constraints>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iMj-8D-rin" firstAttribute="leading" secondItem="qyY-qZ-YUc" secondAttribute="leading" constant="20" id="4hN-Ez-pvl"/>
+                    <constraint firstItem="iMj-8D-rin" firstAttribute="top" secondItem="qyY-qZ-YUc" secondAttribute="top" constant="12" id="D5g-7p-rFg"/>
+                    <constraint firstAttribute="trailing" secondItem="BrQ-WX-OtG" secondAttribute="trailing" constant="20" id="Oox-ns-gKa"/>
+                    <constraint firstItem="BrQ-WX-OtG" firstAttribute="top" secondItem="iMj-8D-rin" secondAttribute="bottom" constant="8" id="Vzm-en-zmk"/>
+                    <constraint firstItem="BrQ-WX-OtG" firstAttribute="leading" secondItem="qyY-qZ-YUc" secondAttribute="leading" constant="20" id="WK0-Ff-TrE"/>
+                    <constraint firstAttribute="trailing" secondItem="iMj-8D-rin" secondAttribute="trailing" constant="20" id="bwr-yx-L49"/>
+                    <constraint firstAttribute="bottom" secondItem="BrQ-WX-OtG" secondAttribute="bottom" id="xCo-Vo-isv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emailField" destination="BrQ-WX-OtG" id="GRX-5C-czB"/>
+            </connections>
+            <point key="canvasLocation" x="-78.260869565217391" y="166.74107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

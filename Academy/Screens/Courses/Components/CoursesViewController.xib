@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoursesViewController" customModule="Academy" customModuleProvider="target">
+            <connections>
+                <outlet property="registrationButton" destination="n5u-3p-5rw" id="xh1-X6-LQ7"/>
+                <outlet property="tableCourses" destination="HJA-HR-lzy" id="c7V-i9-IBL"/>
+                <outlet property="view" destination="Rb8-6X-FVv" id="abC-qa-svi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Rb8-6X-FVv">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HJA-HR-lzy">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5u-3p-5rw">
+                    <rect key="frame" x="43" y="799" width="332" height="36"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="CEy-13-NIt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Предварительная регистрация">
+                        <color key="titleColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="registrationAction:" destination="-1" eventType="touchUpInside" id="DKv-jY-4P8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="qST-B8-bFa" firstAttribute="trailing" secondItem="n5u-3p-5rw" secondAttribute="trailing" constant="39" id="4u3-X7-TPk"/>
+                <constraint firstItem="qST-B8-bFa" firstAttribute="bottom" secondItem="HJA-HR-lzy" secondAttribute="bottom" id="8d4-XW-sEn"/>
+                <constraint firstItem="HJA-HR-lzy" firstAttribute="trailing" secondItem="qST-B8-bFa" secondAttribute="trailing" id="D5U-LT-46r"/>
+                <constraint firstAttribute="bottom" secondItem="n5u-3p-5rw" secondAttribute="bottom" constant="61" id="StW-wJ-AgS"/>
+                <constraint firstItem="HJA-HR-lzy" firstAttribute="top" secondItem="Rb8-6X-FVv" secondAttribute="top" id="frN-iw-APK"/>
+                <constraint firstItem="n5u-3p-5rw" firstAttribute="leading" secondItem="qST-B8-bFa" secondAttribute="leading" constant="43" id="g9F-qv-OLn"/>
+                <constraint firstItem="HJA-HR-lzy" firstAttribute="leading" secondItem="qST-B8-bFa" secondAttribute="leading" id="mUY-2h-qjd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="qST-B8-bFa"/>
+            <point key="canvasLocation" x="682.60869565217399" y="977.67857142857133"/>
+        </view>
+    </objects>
+</document>

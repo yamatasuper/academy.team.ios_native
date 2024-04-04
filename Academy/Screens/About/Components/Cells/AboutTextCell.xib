@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AboutTextCell" rowHeight="185" id="Bdi-2r-VrT" customClass="AboutTextCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bdi-2r-VrT" id="u3E-jc-h8f">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCt-pA-Ak9">
+                        <rect key="frame" x="12" y="12" width="390" height="173"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRr-VG-UyE">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="173"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zRr-VG-UyE" firstAttribute="leading" secondItem="PCt-pA-Ak9" secondAttribute="leading" id="ZQC-A7-SIA"/>
+                            <constraint firstAttribute="bottom" secondItem="zRr-VG-UyE" secondAttribute="bottom" id="fr8-JO-1Kc"/>
+                            <constraint firstAttribute="trailing" secondItem="zRr-VG-UyE" secondAttribute="trailing" id="qsS-My-Eme"/>
+                            <constraint firstItem="zRr-VG-UyE" firstAttribute="top" secondItem="PCt-pA-Ak9" secondAttribute="top" id="sKI-Im-lPD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="PCt-pA-Ak9" secondAttribute="bottom" id="2Jo-yU-eiK"/>
+                    <constraint firstAttribute="trailing" secondItem="PCt-pA-Ak9" secondAttribute="trailing" constant="12" id="CcB-1x-iK6"/>
+                    <constraint firstItem="PCt-pA-Ak9" firstAttribute="top" secondItem="u3E-jc-h8f" secondAttribute="top" constant="12" id="Zgo-Xg-gvQ"/>
+                    <constraint firstItem="PCt-pA-Ak9" firstAttribute="leading" secondItem="u3E-jc-h8f" secondAttribute="leading" constant="12" id="hVC-nt-d8U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelText" destination="zRr-VG-UyE" id="eXP-EF-cgx"/>
+            </connections>
+            <point key="canvasLocation" x="-36.231884057971016" y="169.75446428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

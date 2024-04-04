@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="80" id="bAu-sH-pp1" customClass="EmailAuthCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bAu-sH-pp1" id="v1R-6e-PwK">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите вашу почту" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DKY-Sz-jfk">
+                        <rect key="frame" x="12" y="12" width="390" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="CG6-zC-IUU"/>
+                        </constraints>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkG-Al-C2x">
+                        <rect key="frame" x="346" y="12" width="56" height="56"/>
+                        <color key="backgroundColor" red="0.043137254901960784" green="0.81176470588235294" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="4x8-e0-LRe"/>
+                            <constraint firstAttribute="width" constant="56" id="L0C-pa-Ecl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="→"/>
+                        <connections>
+                            <action selector="nextButtonTappedWithSender:" destination="bAu-sH-pp1" eventType="touchUpInside" id="Jf0-g1-n4T"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vkG-Al-C2x" firstAttribute="top" secondItem="v1R-6e-PwK" secondAttribute="top" constant="12" id="BJf-eL-RvM"/>
+                    <constraint firstAttribute="bottom" secondItem="DKY-Sz-jfk" secondAttribute="bottom" constant="12" id="Gra-0q-lOt"/>
+                    <constraint firstItem="DKY-Sz-jfk" firstAttribute="top" secondItem="v1R-6e-PwK" secondAttribute="top" constant="12" id="SDC-CV-WjM"/>
+                    <constraint firstAttribute="trailing" secondItem="DKY-Sz-jfk" secondAttribute="trailing" constant="12" id="aNY-AK-QId"/>
+                    <constraint firstAttribute="trailing" secondItem="vkG-Al-C2x" secondAttribute="trailing" constant="12" id="cFX-kk-G1U"/>
+                    <constraint firstAttribute="bottom" secondItem="vkG-Al-C2x" secondAttribute="bottom" constant="12" id="i2B-pc-60W"/>
+                    <constraint firstItem="DKY-Sz-jfk" firstAttribute="leading" secondItem="v1R-6e-PwK" secondAttribute="leading" constant="12" id="xvp-UX-Lnc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonNext" destination="vkG-Al-C2x" id="aoS-XE-6rW"/>
+                <outlet property="emailField" destination="DKY-Sz-jfk" id="6rm-4Z-4FE"/>
+            </connections>
+            <point key="canvasLocation" x="-623.1884057971015" y="18.75"/>
+        </tableViewCell>
+    </objects>
+</document>

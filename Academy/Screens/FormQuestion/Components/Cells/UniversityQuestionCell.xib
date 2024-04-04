@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UniversityQuestionCell" rowHeight="166" id="O4W-Pt-dM2" customClass="UniversityQuestionCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O4W-Pt-dM2" id="gAT-YF-iAS">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш ВУЗ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIp-jN-4Jc">
+                        <rect key="frame" x="20" y="12" width="374" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFz-II-WzB">
+                        <rect key="frame" x="20" y="41" width="374" height="125"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cFz-II-WzB" secondAttribute="trailing" constant="20" id="3RO-ct-Wy0"/>
+                    <constraint firstAttribute="bottom" secondItem="cFz-II-WzB" secondAttribute="bottom" id="GFN-YI-h0A"/>
+                    <constraint firstItem="cFz-II-WzB" firstAttribute="top" secondItem="oIp-jN-4Jc" secondAttribute="bottom" constant="8" id="MEP-EP-1Yq"/>
+                    <constraint firstItem="oIp-jN-4Jc" firstAttribute="top" secondItem="gAT-YF-iAS" secondAttribute="top" constant="12" id="ezl-yS-qzR"/>
+                    <constraint firstAttribute="trailing" secondItem="oIp-jN-4Jc" secondAttribute="trailing" constant="20" id="lIf-SP-7kp"/>
+                    <constraint firstItem="oIp-jN-4Jc" firstAttribute="leading" secondItem="gAT-YF-iAS" secondAttribute="leading" constant="20" id="mcU-Oy-tY3"/>
+                    <constraint firstItem="cFz-II-WzB" firstAttribute="leading" secondItem="gAT-YF-iAS" secondAttribute="leading" constant="20" id="ogz-ns-COO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="cFz-II-WzB" id="Q7T-CE-RYs"/>
+            </connections>
+            <point key="canvasLocation" x="-78.260869565217391" y="166.74107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

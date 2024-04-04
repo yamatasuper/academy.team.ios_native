@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PassCell" rowHeight="80" id="KSF-XZ-i3Q" customClass="PassCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="221" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KSF-XZ-i3Q" id="OEE-bB-ENc">
+                <rect key="frame" x="0.0" y="0.0" width="221" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RfF-la-6rd">
+                        <rect key="frame" x="12" y="12" width="197" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="trS-5H-co2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="RfF-la-6rd" secondAttribute="bottom" constant="12" id="JvD-L0-iXN"/>
+                    <constraint firstAttribute="trailing" secondItem="RfF-la-6rd" secondAttribute="trailing" constant="12" id="Ty6-eH-AOi"/>
+                    <constraint firstItem="RfF-la-6rd" firstAttribute="leading" secondItem="OEE-bB-ENc" secondAttribute="leading" constant="12" id="kVr-KF-fsS"/>
+                    <constraint firstItem="RfF-la-6rd" firstAttribute="top" secondItem="OEE-bB-ENc" secondAttribute="top" constant="12" id="vZS-Rv-BtJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="passField" destination="RfF-la-6rd" id="GzU-wR-EGn"/>
+            </connections>
+            <point key="canvasLocation" x="-165.94202898550725" y="90.401785714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

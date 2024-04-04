@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="320" id="7cS-x0-x7f" customClass="MapCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7cS-x0-x7f" id="Sze-hk-4ws">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzB-M1-X5E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="A5h-zu-tkY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IzB-M1-X5E" firstAttribute="top" secondItem="Sze-hk-4ws" secondAttribute="top" id="1Gk-7b-8Ha"/>
+                    <constraint firstAttribute="trailing" secondItem="IzB-M1-X5E" secondAttribute="trailing" id="3bh-jD-HrI"/>
+                    <constraint firstAttribute="bottom" secondItem="IzB-M1-X5E" secondAttribute="bottom" id="D9y-Ed-IGZ"/>
+                    <constraint firstItem="IzB-M1-X5E" firstAttribute="leading" secondItem="Sze-hk-4ws" secondAttribute="leading" id="eTF-hV-kjI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="forMap" destination="IzB-M1-X5E" id="L1R-j4-fOb"/>
+                <outlet property="forMapHeight" destination="A5h-zu-tkY" id="eUB-FZ-cml"/>
+            </connections>
+            <point key="canvasLocation" x="-120.28985507246378" y="178.125"/>
+        </tableViewCell>
+    </objects>
+</document>

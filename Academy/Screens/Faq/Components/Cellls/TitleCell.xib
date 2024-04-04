@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="163" id="kL8-62-KgX" customClass="TitleCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kL8-62-KgX" id="oMR-hx-3Rf">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="заголовок" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89Q-eC-hi5">
+                        <rect key="frame" x="12" y="12" width="390" height="126"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="24"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHp-FU-jOm">
+                        <rect key="frame" x="177" y="150" width="60" height="1"/>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.81176470590000005" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9r1-on-Okx"/>
+                            <constraint firstAttribute="width" constant="60" id="da0-be-glW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HHp-FU-jOm" firstAttribute="top" secondItem="89Q-eC-hi5" secondAttribute="bottom" constant="12" id="57y-1H-kbp"/>
+                    <constraint firstItem="89Q-eC-hi5" firstAttribute="top" secondItem="oMR-hx-3Rf" secondAttribute="top" constant="12" id="DL8-hO-cg2"/>
+                    <constraint firstAttribute="bottom" secondItem="HHp-FU-jOm" secondAttribute="bottom" constant="12" id="L3I-0S-a6v"/>
+                    <constraint firstItem="89Q-eC-hi5" firstAttribute="leading" secondItem="oMR-hx-3Rf" secondAttribute="leading" constant="12" id="U94-7n-mR1"/>
+                    <constraint firstItem="HHp-FU-jOm" firstAttribute="top" secondItem="89Q-eC-hi5" secondAttribute="bottom" constant="12" id="V2T-4F-uiY"/>
+                    <constraint firstAttribute="trailing" secondItem="89Q-eC-hi5" secondAttribute="trailing" constant="12" id="YoM-LJ-WAs"/>
+                    <constraint firstItem="HHp-FU-jOm" firstAttribute="centerX" secondItem="oMR-hx-3Rf" secondAttribute="centerX" id="uzR-iy-5M3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="titleText" destination="89Q-eC-hi5" id="MeF-s1-IO5"/>
+            </connections>
+            <point key="canvasLocation" x="-20.289855072463769" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

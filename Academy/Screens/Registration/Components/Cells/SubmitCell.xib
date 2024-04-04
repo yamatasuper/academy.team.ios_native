@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="108" id="bLU-WJ-Xjg" customClass="SubmitCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bLU-WJ-Xjg" id="G3z-EJ-6Me">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lz5-6e-H3M">
+                        <rect key="frame" x="12" y="12" width="390" height="56"/>
+                        <color key="backgroundColor" red="0.043137254899999998" green="0.81176470590000005" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="VTS-hI-61P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="submitButtonTappedWithSender:" destination="bLU-WJ-Xjg" eventType="touchUpInside" id="8Jq-y4-QGN"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lz5-6e-H3M" firstAttribute="leading" secondItem="G3z-EJ-6Me" secondAttribute="leading" constant="12" id="8pZ-h6-O2d"/>
+                    <constraint firstAttribute="trailing" secondItem="lz5-6e-H3M" secondAttribute="trailing" constant="12" id="9iu-fu-UAs"/>
+                    <constraint firstItem="lz5-6e-H3M" firstAttribute="top" secondItem="G3z-EJ-6Me" secondAttribute="top" constant="12" id="Egf-CZ-pVG"/>
+                    <constraint firstAttribute="bottom" secondItem="lz5-6e-H3M" secondAttribute="bottom" constant="12" id="nTq-Ws-3H2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="submitButton" destination="lz5-6e-H3M" id="G5y-Dy-CYR"/>
+            </connections>
+            <point key="canvasLocation" x="-159.42028985507247" y="103.79464285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="I6Z-MJ-IdN" customClass="EmailCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I6Z-MJ-IdN" id="3X0-sX-dff">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-BU-rCM">
+                        <rect key="frame" x="12" y="12" width="401" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="lj0-Ag-mab"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jQ2-BU-rCM" secondAttribute="bottom" constant="12" id="J0k-lQ-JFw"/>
+                    <constraint firstItem="jQ2-BU-rCM" firstAttribute="leading" secondItem="3X0-sX-dff" secondAttribute="leading" constant="12" id="Kg5-hn-1Zh"/>
+                    <constraint firstItem="jQ2-BU-rCM" firstAttribute="top" secondItem="3X0-sX-dff" secondAttribute="top" constant="12" id="ZwG-FZ-A48"/>
+                    <constraint firstAttribute="trailing" secondItem="jQ2-BU-rCM" secondAttribute="trailing" constant="12" id="nQs-Cr-B5S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emailField" destination="jQ2-BU-rCM" id="4ah-Yx-WWm"/>
+            </connections>
+            <point key="canvasLocation" x="-18.115942028985508" y="90.401785714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

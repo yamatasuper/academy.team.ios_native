@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TitleLeftCell" rowHeight="163" id="Adk-gi-jsz" customClass="TitleLeftCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Adk-gi-jsz" id="3ok-9c-BFE">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тест текст" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJ0-aE-Zqf">
+                        <rect key="frame" x="12" y="12" width="126.5" height="126"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zto-kl-78d">
+                        <rect key="frame" x="12" y="150" width="60" height="1"/>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.81176470590000005" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DMG-VI-wDp"/>
+                            <constraint firstAttribute="width" constant="60" id="LFB-IG-yrQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="VJ0-aE-Zqf" firstAttribute="top" secondItem="3ok-9c-BFE" secondAttribute="top" constant="12" id="9B3-Mn-yS8"/>
+                    <constraint firstItem="Zto-kl-78d" firstAttribute="leading" secondItem="3ok-9c-BFE" secondAttribute="leading" constant="12" id="YAn-p3-af3"/>
+                    <constraint firstItem="Zto-kl-78d" firstAttribute="top" secondItem="VJ0-aE-Zqf" secondAttribute="bottom" constant="12" id="aBJ-Wt-g4v"/>
+                    <constraint firstAttribute="bottom" secondItem="Zto-kl-78d" secondAttribute="bottom" constant="12" id="cUV-aK-1uO"/>
+                    <constraint firstItem="VJ0-aE-Zqf" firstAttribute="leading" secondItem="3ok-9c-BFE" secondAttribute="leading" constant="12" id="nVm-me-Adp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="TitleLeftText" destination="VJ0-aE-Zqf" id="iCB-GS-WJv"/>
+                <outlet property="viewWidth" destination="LFB-IG-yrQ" id="ZO5-ZP-tJb"/>
+            </connections>
+            <point key="canvasLocation" x="-20.289855072463769" y="167.07589285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

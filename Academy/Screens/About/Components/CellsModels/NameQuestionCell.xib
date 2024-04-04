@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameQuestionCell" rowHeight="166" id="wwF-fl-4tc" customClass="NameQuestionCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wwF-fl-4tc" id="QQx-jk-5nT">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваши ФИО" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwp-sA-qrm">
+                        <rect key="frame" x="20" y="12" width="374" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AV7-Ue-Vj5">
+                        <rect key="frame" x="20" y="41" width="374" height="125"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AV7-Ue-Vj5" secondAttribute="trailing" constant="20" id="3MV-zz-TDE"/>
+                    <constraint firstItem="iwp-sA-qrm" firstAttribute="top" secondItem="QQx-jk-5nT" secondAttribute="top" constant="12" id="8yu-xW-42e"/>
+                    <constraint firstItem="AV7-Ue-Vj5" firstAttribute="leading" secondItem="QQx-jk-5nT" secondAttribute="leading" constant="20" id="JIl-QC-grs"/>
+                    <constraint firstItem="iwp-sA-qrm" firstAttribute="leading" secondItem="QQx-jk-5nT" secondAttribute="leading" constant="20" id="dY1-4L-Ugl"/>
+                    <constraint firstAttribute="trailing" secondItem="iwp-sA-qrm" secondAttribute="trailing" constant="20" id="fe7-db-5pu"/>
+                    <constraint firstItem="AV7-Ue-Vj5" firstAttribute="top" secondItem="iwp-sA-qrm" secondAttribute="bottom" constant="8" id="pRw-cg-r9t"/>
+                    <constraint firstAttribute="bottom" secondItem="AV7-Ue-Vj5" secondAttribute="bottom" id="tGo-zd-OdY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="AV7-Ue-Vj5" id="WuU-JK-Lpr"/>
+            </connections>
+            <point key="canvasLocation" x="-78.260869565217391" y="166.74107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

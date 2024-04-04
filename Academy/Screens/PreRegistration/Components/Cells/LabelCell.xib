@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCell" rowHeight="189" id="ASn-4Y-M7D" customClass="LabelCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ASn-4Y-M7D" id="jZQ-5B-k26">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxb-2H-HQU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd9-3t-UYR">
+                                <rect key="frame" x="8" y="13" width="398" height="160"/>
+                                <string key="text">Не нашли подходящий курс? Заполните предварительную заявку на обучение. Мы вышлем письмо на почту когда регистрация на выбранный курс откроется. Потоки запускаются по мере формирования групп. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jd9-3t-UYR" secondAttribute="bottom" constant="16" id="HCk-l1-l6R"/>
+                            <constraint firstAttribute="trailing" secondItem="jd9-3t-UYR" secondAttribute="trailing" constant="8" id="d3F-0b-3mz"/>
+                            <constraint firstItem="jd9-3t-UYR" firstAttribute="leading" secondItem="Oxb-2H-HQU" secondAttribute="leading" constant="8" id="nwr-Ek-dlO"/>
+                            <constraint firstItem="jd9-3t-UYR" firstAttribute="top" secondItem="Oxb-2H-HQU" secondAttribute="top" constant="13" id="wSM-Po-Ha1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Oxb-2H-HQU" secondAttribute="bottom" id="S89-1c-BEc"/>
+                    <constraint firstItem="Oxb-2H-HQU" firstAttribute="top" secondItem="jZQ-5B-k26" secondAttribute="top" id="jqj-Zs-OLt"/>
+                    <constraint firstAttribute="trailing" secondItem="Oxb-2H-HQU" secondAttribute="trailing" id="pux-hU-e3P"/>
+                    <constraint firstItem="Oxb-2H-HQU" firstAttribute="leading" secondItem="jZQ-5B-k26" secondAttribute="leading" id="yoH-hi-VR6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.043137254899999998" green="0.26274509800000001" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="131.8840579710145" y="161.04910714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

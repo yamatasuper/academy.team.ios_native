@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="207" id="BsG-xD-rcB" customClass="SocialCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BsG-xD-rcB" id="nO8-z7-nB3">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="207"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ko8-Zi-fLl">
+                        <rect key="frame" x="12" y="172" width="394" height="35"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttb-ks-Y0M">
+                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8xK-GX-NBx"/>
+                                    <constraint firstAttribute="width" constant="35" id="OWE-tx-egh"/>
+                                </constraints>
+                                <state key="normal" image="icon-vk"/>
+                                <connections>
+                                    <action selector="vkIconTap:" destination="BsG-xD-rcB" eventType="touchUpInside" id="bvh-2I-afN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-WH-cQX">
+                                <rect key="frame" x="43" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ApK-C0-Lme"/>
+                                    <constraint firstAttribute="width" constant="35" id="VVw-ZR-J9b"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="facebookIconTap:" destination="BsG-xD-rcB" eventType="touchUpInside" id="A7X-Ht-Hx9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9E-dv-wgK">
+                                <rect key="frame" x="86" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="GQq-7u-ioU"/>
+                                    <constraint firstAttribute="width" constant="35" id="MGu-1g-Kmf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="instagramIconTap:" destination="BsG-xD-rcB" eventType="touchUpInside" id="Q3f-bW-vpB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sw-7n-LTU">
+                                <rect key="frame" x="129" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Avj-gl-LBm"/>
+                                    <constraint firstAttribute="width" constant="35" id="PmT-MF-jRQ"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="telegramIconTap:" destination="BsG-xD-rcB" eventType="touchUpInside" id="Kmb-zj-iHA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Sw-7n-LTU" firstAttribute="leading" secondItem="F9E-dv-wgK" secondAttribute="trailing" constant="8" id="1cu-K8-EjE"/>
+                            <constraint firstAttribute="bottom" secondItem="9Sw-7n-LTU" secondAttribute="bottom" id="4Mx-wS-iwe"/>
+                            <constraint firstItem="Ttb-ks-Y0M" firstAttribute="leading" secondItem="ko8-Zi-fLl" secondAttribute="leading" id="BDr-22-tYq"/>
+                            <constraint firstAttribute="bottom" secondItem="uGT-WH-cQX" secondAttribute="bottom" id="F0k-zd-f1m"/>
+                            <constraint firstItem="uGT-WH-cQX" firstAttribute="leading" secondItem="Ttb-ks-Y0M" secondAttribute="trailing" constant="8" id="LqY-oO-Ht9"/>
+                            <constraint firstAttribute="bottom" secondItem="F9E-dv-wgK" secondAttribute="bottom" id="d96-sU-fk8"/>
+                            <constraint firstItem="9Sw-7n-LTU" firstAttribute="top" secondItem="ko8-Zi-fLl" secondAttribute="top" id="gNX-uE-Xda"/>
+                            <constraint firstItem="F9E-dv-wgK" firstAttribute="leading" secondItem="uGT-WH-cQX" secondAttribute="trailing" constant="8" id="ogD-GJ-46F"/>
+                            <constraint firstItem="Ttb-ks-Y0M" firstAttribute="top" secondItem="ko8-Zi-fLl" secondAttribute="top" id="okZ-Wi-sMm"/>
+                            <constraint firstItem="F9E-dv-wgK" firstAttribute="top" secondItem="ko8-Zi-fLl" secondAttribute="top" id="spj-g1-MPV"/>
+                            <constraint firstItem="uGT-WH-cQX" firstAttribute="top" secondItem="ko8-Zi-fLl" secondAttribute="top" id="t6U-K4-EYS"/>
+                            <constraint firstAttribute="bottom" secondItem="Ttb-ks-Y0M" secondAttribute="bottom" id="uQC-ap-AUb"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мы в социальных сетях:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Aw-bC-vAU">
+                        <rect key="frame" x="12" y="12" width="390" height="152"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ko8-Zi-fLl" secondAttribute="bottom" id="0Je-8f-45z"/>
+                    <constraint firstAttribute="trailing" secondItem="ko8-Zi-fLl" secondAttribute="trailing" constant="8" id="RwO-SY-m5y"/>
+                    <constraint firstItem="ko8-Zi-fLl" firstAttribute="leading" secondItem="nO8-z7-nB3" secondAttribute="leading" constant="12" id="UFg-SV-Kuu"/>
+                    <constraint firstItem="ko8-Zi-fLl" firstAttribute="top" secondItem="3Aw-bC-vAU" secondAttribute="bottom" constant="8" id="XDQ-EK-dNK"/>
+                    <constraint firstAttribute="trailing" secondItem="3Aw-bC-vAU" secondAttribute="trailing" constant="12" id="gTq-tH-xt4"/>
+                    <constraint firstItem="3Aw-bC-vAU" firstAttribute="leading" secondItem="nO8-z7-nB3" secondAttribute="leading" constant="12" id="sjP-eH-3mo"/>
+                    <constraint firstItem="3Aw-bC-vAU" firstAttribute="top" secondItem="nO8-z7-nB3" secondAttribute="top" constant="12" id="tdu-uW-Tku"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="facebookIcon" destination="uGT-WH-cQX" id="JiG-3U-Dfk"/>
+                <outlet property="instagramIcon" destination="F9E-dv-wgK" id="fe8-bQ-gS0"/>
+                <outlet property="telegramIcon" destination="9Sw-7n-LTU" id="0Kp-kq-vk0"/>
+                <outlet property="vkIcon" destination="Ttb-ks-Y0M" id="MDA-qh-NWs"/>
+            </connections>
+            <point key="canvasLocation" x="-194.20289855072465" y="169.08482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-vk" width="384" height="384"/>
+    </resources>
+</document>

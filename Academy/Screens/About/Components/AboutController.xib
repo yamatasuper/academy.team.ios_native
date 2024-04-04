@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutController" customModule="Academy" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBottomConstraint" destination="nH1-j8-9NF" id="wwQ-eg-r0m"/>
+                <outlet property="tableView" destination="9aM-q3-PlG" id="kMN-m9-hxV"/>
+                <outlet property="view" destination="jnf-U4-gu7" id="dnY-nz-yEO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jnf-U4-gu7">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9aM-q3-PlG">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9aM-q3-PlG" firstAttribute="leading" secondItem="QbD-us-Vba" secondAttribute="leading" id="VqO-zz-LWX"/>
+                <constraint firstItem="9aM-q3-PlG" firstAttribute="top" secondItem="QbD-us-Vba" secondAttribute="top" id="aGZ-SY-GOy"/>
+                <constraint firstItem="QbD-us-Vba" firstAttribute="bottom" secondItem="9aM-q3-PlG" secondAttribute="bottom" id="nH1-j8-9NF"/>
+                <constraint firstItem="QbD-us-Vba" firstAttribute="trailing" secondItem="9aM-q3-PlG" secondAttribute="trailing" id="sAC-T9-i8U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QbD-us-Vba"/>
+            <point key="canvasLocation" x="308.69565217391306" y="116.51785714285714"/>
+        </view>
+    </objects>
+</document>

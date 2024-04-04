@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AnswerCell" rowHeight="61" id="Od8-P5-JO0" customClass="AnswerCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Od8-P5-JO0" id="8Wb-vV-Bwn">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOe-bq-leq">
+                        <rect key="frame" x="12" y="0.0" width="390" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разработка под Android " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaa-jH-9ye">
+                                <rect key="frame" x="0.0" y="8" width="390" height="45"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gaa-jH-9ye" secondAttribute="bottom" constant="8" id="4Mo-su-boQ"/>
+                            <constraint firstAttribute="trailing" secondItem="gaa-jH-9ye" secondAttribute="trailing" id="kJD-gH-AYj"/>
+                            <constraint firstItem="gaa-jH-9ye" firstAttribute="top" secondItem="sOe-bq-leq" secondAttribute="top" constant="8" id="kSe-rH-ywM"/>
+                            <constraint firstItem="gaa-jH-9ye" firstAttribute="leading" secondItem="sOe-bq-leq" secondAttribute="leading" id="rOo-Fc-GXF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="sOe-bq-leq" secondAttribute="bottom" id="PCV-E6-Gvx"/>
+                    <constraint firstItem="sOe-bq-leq" firstAttribute="centerX" secondItem="8Wb-vV-Bwn" secondAttribute="centerX" id="PaM-hD-9R4"/>
+                    <constraint firstAttribute="trailing" secondItem="sOe-bq-leq" secondAttribute="trailing" constant="12" id="bcI-OT-764"/>
+                    <constraint firstItem="sOe-bq-leq" firstAttribute="leading" secondItem="8Wb-vV-Bwn" secondAttribute="leading" constant="12" id="hoN-SQ-G99"/>
+                    <constraint firstItem="sOe-bq-leq" firstAttribute="top" secondItem="8Wb-vV-Bwn" secondAttribute="top" id="q1L-EW-g0g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="labelText" destination="gaa-jH-9ye" id="1Ug-Xf-HaN"/>
+            </connections>
+            <point key="canvasLocation" x="-146.37681159420291" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

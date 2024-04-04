@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" rowHeight="185" id="ROm-m6-8gJ" customClass="QuestionCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="536" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ROm-m6-8gJ" id="5Lt-ZA-x8n">
+                <rect key="frame" x="0.0" y="0.0" width="536" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddY-ys-VKr">
+                        <rect key="frame" x="12" y="0.0" width="512" height="185"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPR-1h-ePZ">
+                                <rect key="frame" x="0.0" y="8" width="456" height="169"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVf-in-lII">
+                                <rect key="frame" x="8" y="8" width="496" height="169"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="questionTap:" destination="ROm-m6-8gJ" eventType="touchUpInside" id="LXp-L4-Hzn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gn-t9-oVC">
+                                <rect key="frame" x="464" y="72.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eRN-Ja-D7k"/>
+                                    <constraint firstAttribute="width" constant="40" id="s80-2F-QSg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.81176470590000005" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xVf-in-lII" firstAttribute="leading" secondItem="ddY-ys-VKr" secondAttribute="leading" constant="8" id="6vE-lr-rzJ"/>
+                            <constraint firstItem="xVf-in-lII" firstAttribute="top" secondItem="ddY-ys-VKr" secondAttribute="top" constant="8" id="DZI-YZ-kXi"/>
+                            <constraint firstAttribute="bottom" secondItem="xVf-in-lII" secondAttribute="bottom" constant="8" id="QEj-uN-HEE"/>
+                            <constraint firstItem="mPR-1h-ePZ" firstAttribute="leading" secondItem="ddY-ys-VKr" secondAttribute="leading" id="Rk3-WX-k5w"/>
+                            <constraint firstItem="7Gn-t9-oVC" firstAttribute="centerY" secondItem="xVf-in-lII" secondAttribute="centerY" id="Zdk-p1-qw0"/>
+                            <constraint firstItem="7Gn-t9-oVC" firstAttribute="trailing" secondItem="xVf-in-lII" secondAttribute="trailing" id="dJR-gd-QMr"/>
+                            <constraint firstItem="mPR-1h-ePZ" firstAttribute="top" secondItem="ddY-ys-VKr" secondAttribute="top" constant="8" id="dpM-Sx-CuD"/>
+                            <constraint firstAttribute="trailing" secondItem="xVf-in-lII" secondAttribute="trailing" constant="8" id="gHb-Ol-3eO"/>
+                            <constraint firstItem="7Gn-t9-oVC" firstAttribute="leading" secondItem="mPR-1h-ePZ" secondAttribute="trailing" constant="8" id="uOp-MC-9UJ"/>
+                            <constraint firstAttribute="bottom" secondItem="mPR-1h-ePZ" secondAttribute="bottom" constant="8" id="zrF-K5-o3M"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ddY-ys-VKr" firstAttribute="top" secondItem="5Lt-ZA-x8n" secondAttribute="top" id="0H3-Ch-no9"/>
+                    <constraint firstAttribute="bottom" secondItem="ddY-ys-VKr" secondAttribute="bottom" id="8Dv-WT-Sda"/>
+                    <constraint firstItem="ddY-ys-VKr" firstAttribute="leading" secondItem="5Lt-ZA-x8n" secondAttribute="leading" constant="12" id="Bml-zg-SDY"/>
+                    <constraint firstItem="ddY-ys-VKr" firstAttribute="centerX" secondItem="5Lt-ZA-x8n" secondAttribute="centerX" id="PB3-HM-Obq"/>
+                    <constraint firstAttribute="trailing" secondItem="ddY-ys-VKr" secondAttribute="trailing" constant="12" id="hX1-mg-jAi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="questionButton" destination="xVf-in-lII" id="cJ8-qi-GPF"/>
+                <outlet property="questionStatus" destination="7Gn-t9-oVC" id="apT-Hd-4Xa"/>
+                <outlet property="textHeader" destination="mPR-1h-ePZ" id="LK2-Mb-w8t"/>
+                <outlet property="textWrap" destination="ddY-ys-VKr" id="xAp-rP-0T5"/>
+            </connections>
+            <point key="canvasLocation" x="-59.420289855072468" y="54.575892857142854"/>
+        </tableViewCell>
+    </objects>
+</document>

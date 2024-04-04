@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuLinkCell" rowHeight="145" id="Ygh-ib-TVw" customClass="MenuLinkCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ygh-ib-TVw" id="xHX-R3-Op1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTh-Jg-tm7">
+                        <rect key="frame" x="12" y="12" width="390" height="121"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="MenuLinkButtonTappedWithSender:" destination="Ygh-ib-TVw" eventType="touchUpInside" id="Okd-Uu-d7h"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uTh-Jg-tm7" secondAttribute="bottom" constant="12" id="7U3-K2-UIs"/>
+                    <constraint firstAttribute="trailing" secondItem="uTh-Jg-tm7" secondAttribute="trailing" constant="12" id="Vtm-Qz-ovi"/>
+                    <constraint firstItem="uTh-Jg-tm7" firstAttribute="top" secondItem="xHX-R3-Op1" secondAttribute="top" constant="12" id="ZIS-9v-4Pc"/>
+                    <constraint firstItem="uTh-Jg-tm7" firstAttribute="leading" secondItem="xHX-R3-Op1" secondAttribute="leading" constant="12" id="fSO-Eu-XKJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="linkButton" destination="uTh-Jg-tm7" id="kym-IU-mrK"/>
+            </connections>
+            <point key="canvasLocation" x="-130.43478260869566" y="131.58482142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

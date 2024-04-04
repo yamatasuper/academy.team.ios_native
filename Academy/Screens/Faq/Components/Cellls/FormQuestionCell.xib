@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FormQuestionCell" rowHeight="185" id="5nD-cY-9Bs" customClass="FormQuestionCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="536" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5nD-cY-9Bs" id="Mxy-VT-55E">
+                <rect key="frame" x="0.0" y="0.0" width="536" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YII-Az-A22">
+                        <rect key="frame" x="8" y="8" width="520" height="177"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gko-IF-Yyr">
+                                <rect key="frame" x="8" y="12" width="456" height="153"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIG-Wd-g6Y">
+                                <rect key="frame" x="8" y="8" width="504" height="161"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uli-9A-sWB">
+                                <rect key="frame" x="472" y="68.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="iP3-th-AzW"/>
+                                    <constraint firstAttribute="height" constant="40" id="uKf-QP-3DN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
+                                <color key="tintColor" red="0.043137254899999998" green="0.81176470590000005" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qIG-Wd-g6Y" secondAttribute="bottom" constant="8" id="44f-gy-kbc"/>
+                            <constraint firstAttribute="trailing" secondItem="qIG-Wd-g6Y" secondAttribute="trailing" constant="8" id="47V-ZY-ySh"/>
+                            <constraint firstAttribute="bottom" secondItem="gko-IF-Yyr" secondAttribute="bottom" constant="12" id="8HG-hC-kCn"/>
+                            <constraint firstItem="qIG-Wd-g6Y" firstAttribute="top" secondItem="YII-Az-A22" secondAttribute="top" constant="8" id="AIv-Zm-S9t"/>
+                            <constraint firstItem="uli-9A-sWB" firstAttribute="leading" secondItem="gko-IF-Yyr" secondAttribute="trailing" constant="8" symbolic="YES" id="Abp-9E-0CB"/>
+                            <constraint firstItem="gko-IF-Yyr" firstAttribute="top" secondItem="YII-Az-A22" secondAttribute="top" constant="12" id="BSr-x3-ml3"/>
+                            <constraint firstItem="uli-9A-sWB" firstAttribute="trailing" secondItem="qIG-Wd-g6Y" secondAttribute="trailing" id="KVn-Hn-R0g"/>
+                            <constraint firstAttribute="bottom" secondItem="gko-IF-Yyr" secondAttribute="bottom" constant="12" id="Qex-CA-xct"/>
+                            <constraint firstItem="uli-9A-sWB" firstAttribute="centerY" secondItem="qIG-Wd-g6Y" secondAttribute="centerY" id="XdQ-QP-n97"/>
+                            <constraint firstItem="qIG-Wd-g6Y" firstAttribute="leading" secondItem="YII-Az-A22" secondAttribute="leading" constant="8" id="pew-pz-M5u"/>
+                            <constraint firstItem="gko-IF-Yyr" firstAttribute="leading" secondItem="YII-Az-A22" secondAttribute="leading" constant="8" id="ppj-An-fsX"/>
+                            <constraint firstItem="uli-9A-sWB" firstAttribute="leading" secondItem="gko-IF-Yyr" secondAttribute="trailing" constant="8" id="wiI-VP-M0R"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="YII-Az-A22" firstAttribute="top" secondItem="Mxy-VT-55E" secondAttribute="top" constant="8" id="5I5-Yj-OTL"/>
+                    <constraint firstItem="YII-Az-A22" firstAttribute="leading" secondItem="Mxy-VT-55E" secondAttribute="leading" constant="8" id="RyQ-28-gA2"/>
+                    <constraint firstAttribute="trailing" secondItem="YII-Az-A22" secondAttribute="trailing" constant="8" id="UR0-aM-csM"/>
+                    <constraint firstItem="YII-Az-A22" firstAttribute="centerX" secondItem="Mxy-VT-55E" secondAttribute="centerX" id="heC-75-1jO"/>
+                    <constraint firstAttribute="bottom" secondItem="YII-Az-A22" secondAttribute="bottom" id="qIJ-Ie-bd0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="formQuestionButton" destination="qIG-Wd-g6Y" id="jKA-c6-OPr"/>
+                <outlet property="formQuestionStatus" destination="uli-9A-sWB" id="y50-P7-5x8"/>
+                <outlet property="textHeader" destination="gko-IF-Yyr" id="ZcZ-jF-Bvh"/>
+                <outlet property="textWrap" destination="YII-Az-A22" id="tvU-qW-WCU"/>
+            </connections>
+            <point key="canvasLocation" x="-59.420289855072468" y="54.575892857142854"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4tX-T2-23M" customClass="CourseCollectionCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hng-Lu-xBJ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOc-0m-Npo">
+                        <rect key="frame" x="12" y="12" width="390" height="168"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6M-qr-Qnj">
+                                <rect key="frame" x="18" y="24" width="354" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igx-ez-h4i">
+                                <rect key="frame" x="18" y="80.5" width="354" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0Z-9h-6dX">
+                                <rect key="frame" x="18" y="55.5" width="120" height="1"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.81176470590000005" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="jF7-kj-Tu0"/>
+                                    <constraint firstAttribute="height" constant="1" id="nDl-AS-sgG"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ws-GG-rY1">
+                                <rect key="frame" x="18" y="111.5" width="354" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4ws-GG-rY1" firstAttribute="top" secondItem="igx-ez-h4i" secondAttribute="bottom" constant="12" id="0q7-G2-ZQP"/>
+                            <constraint firstItem="V0Z-9h-6dX" firstAttribute="top" secondItem="S6M-qr-Qnj" secondAttribute="bottom" constant="8" symbolic="YES" id="Bza-ay-o5O"/>
+                            <constraint firstItem="igx-ez-h4i" firstAttribute="top" secondItem="V0Z-9h-6dX" secondAttribute="bottom" constant="24" id="Hk9-QU-wtR"/>
+                            <constraint firstItem="S6M-qr-Qnj" firstAttribute="top" secondItem="lOc-0m-Npo" secondAttribute="top" constant="24" id="Kxs-xC-9vm"/>
+                            <constraint firstItem="4ws-GG-rY1" firstAttribute="leading" secondItem="lOc-0m-Npo" secondAttribute="leading" constant="18" id="PSU-rP-hgD"/>
+                            <constraint firstAttribute="trailing" secondItem="4ws-GG-rY1" secondAttribute="trailing" constant="18" id="YOs-Yq-41J"/>
+                            <constraint firstItem="igx-ez-h4i" firstAttribute="leading" secondItem="lOc-0m-Npo" secondAttribute="leading" constant="18" id="d1x-Lj-eMQ"/>
+                            <constraint firstItem="V0Z-9h-6dX" firstAttribute="leading" secondItem="lOc-0m-Npo" secondAttribute="leading" constant="18" id="gE1-En-rTo"/>
+                            <constraint firstItem="S6M-qr-Qnj" firstAttribute="leading" secondItem="lOc-0m-Npo" secondAttribute="leading" constant="18" id="h54-qr-oUb"/>
+                            <constraint firstAttribute="trailing" secondItem="igx-ez-h4i" secondAttribute="trailing" constant="18" id="mou-oD-5O2"/>
+                            <constraint firstAttribute="trailing" secondItem="S6M-qr-Qnj" secondAttribute="trailing" constant="18" id="zhn-Jo-Dsm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lOc-0m-Npo" firstAttribute="top" secondItem="Hng-Lu-xBJ" secondAttribute="top" constant="12" id="6y0-Td-sbR"/>
+                    <constraint firstAttribute="bottom" secondItem="lOc-0m-Npo" secondAttribute="bottom" constant="12" id="Oyh-xi-qTH"/>
+                    <constraint firstItem="lOc-0m-Npo" firstAttribute="leading" secondItem="Hng-Lu-xBJ" secondAttribute="leading" constant="12" id="pWQ-OH-hLy"/>
+                    <constraint firstAttribute="trailing" secondItem="lOc-0m-Npo" secondAttribute="trailing" constant="12" id="uWX-2V-2P7"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="414" height="192"/>
+            <connections>
+                <outlet property="collectionWrap" destination="lOc-0m-Npo" id="uIk-J0-Fzp"/>
+                <outlet property="dateLabel" destination="igx-ez-h4i" id="cPL-TJ-CHP"/>
+                <outlet property="statusLabel" destination="4ws-GG-rY1" id="45l-9M-EpS"/>
+                <outlet property="titleLabel" destination="S6M-qr-Qnj" id="0x5-01-t9a"/>
+            </connections>
+            <point key="canvasLocation" x="-31.884057971014496" y="61.607142857142854"/>
+        </collectionViewCell>
+    </objects>
+</document>

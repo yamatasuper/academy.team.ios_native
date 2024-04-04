@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="318" id="CXI-og-QZc" customClass="CollectionListCell" customModule="Academy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="318"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CXI-og-QZc" id="LNo-Ga-IK2">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="318"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ChO-mX-7KX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="Yeg-a0-ErP"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ajb-Z6-a9c">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ChO-mX-7KX" firstAttribute="leading" secondItem="LNo-Ga-IK2" secondAttribute="leading" id="4bT-lw-w6l"/>
+                    <constraint firstAttribute="trailing" secondItem="ChO-mX-7KX" secondAttribute="trailing" id="8hn-e1-b4w"/>
+                    <constraint firstAttribute="bottom" secondItem="ChO-mX-7KX" secondAttribute="bottom" id="bxN-ba-TnQ"/>
+                    <constraint firstItem="ChO-mX-7KX" firstAttribute="top" secondItem="LNo-Ga-IK2" secondAttribute="top" id="icH-NK-fAB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionList" destination="ChO-mX-7KX" id="OCU-nf-Vc1"/>
+            </connections>
+            <point key="canvasLocation" x="-130.43478260869566" y="204.24107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
